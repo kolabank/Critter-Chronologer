@@ -17,7 +17,7 @@ public class Customer {
 
     //One customer can have multiple pets hence OneToMany relationship
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "customer", cascade = CascadeType.ALL)
-    @ElementCollection(targetClass = Pet.class)
+//    @ElementCollection(targetClass = Pet.class)
     private List<Pet> pets = new ArrayList<>();
 
     public long getId() {

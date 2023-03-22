@@ -19,7 +19,7 @@ public class Pet {
 
     //Many-to-one polymorhphic relation with Customer used (many pets can belong to one customer)
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "Cust_Pet")
+//    @JoinColumn(name = "Cust_Pet")
     private Customer customer;
 
     private LocalDate birthDate;

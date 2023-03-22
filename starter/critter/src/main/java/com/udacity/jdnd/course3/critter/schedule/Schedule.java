@@ -23,7 +23,7 @@ public class Schedule {
 
     //ManyToMany relationship used between schedule and pets as is taken that one pet
     // can have multiple schedules and  multiple pets can be included on a schedule
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     private List<Pet> pets;
 
     private LocalDate date;
